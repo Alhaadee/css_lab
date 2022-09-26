@@ -1,0 +1,110 @@
+
+body{
+    font-family: sans-serif;
+    background-color: #e8fccf;
+    margin: 0px;
+}
+.cards__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.card img{
+    width:  50%;
+    object-fit: cover;
+    
+    
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3da35d;
+}
+
+header {
+    display: grid;
+    grid-template-areas:
+    "logo heading search"
+    "nav nav nav";
+    background-color: #3da35d;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header nav {
+    font-size: 20px;
+}
+h2,h3{
+    text-align: center;
+}
+
+.card{
+    text-align: center;
+    background-color: #96e072;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.logo {
+    grid-area: logo;
+}
+.heading{
+    grid-area: heading;
+}
+.search{
+    grid-area: search;
+    width: 80%;
+    height: 15px;
+}
+.nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.events div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.events p {width: 50%;}
+
+.left-footer ul{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.animals{
+    margin: 20px;
+}
+
+.side{
+    flex-grow: 1;
+}
+.middle{
+    flex-grow: 2;
+}
+
+@media screen and (max-width: 600px) {
+    .cards__container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
